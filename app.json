@@ -1,0 +1,25 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "description": "My first bottle app with CI",
+  "env": {
+    "APP_LOCATION": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "name": "bottle",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
