@@ -16,7 +16,7 @@ def handle_root_url():
 @route('/profile')
 def make_request():
     # make an API request here
-    profile_data = {'name': 'Ryan Cheley', 'role': 'Developer'}
+    profile_data = {'name': 'Ryan Cheley', 'role': 'Developer', 'email':'test at example dot com'}
     return template('details', data=profile_data)
 
 

@@ -8,6 +8,7 @@
       <ul>
 	    <li>Name: {{data['name']}}</li>
 	    <li>Role: {{data['role']}}</li>
+	    <li>Email: {{data['email']}}</li>
 	  </ul>
   </body>
 </html>
