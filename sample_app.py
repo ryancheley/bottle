@@ -20,6 +20,16 @@ def make_request():
     return template('details', data=profile_data)
 
 
+@route('/about')
+def show_about():
+    return template('about')
+
+
+@route('/contact')
+def show_about():
+    return template('contact')
+
+
 @route('/css/<filename>')
 def send_css(filename):
     return static_file(filename, root='static/css')
