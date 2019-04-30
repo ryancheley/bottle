@@ -3,3 +3,4 @@ venv
 
 #.idea files
 .idea
+.DS_Store
