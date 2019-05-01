@@ -13,16 +13,25 @@
   </head>
   <body>
 
-  <nav class="navbar navbar-default navbar-static-left">
-      <div class="container">
-          <div class="row">
-              <div class="navbar-header">
-                  <a class="navbar-brand" href="/">ProjectOnlineDiner</a>
-                  <a class="navbar-brand" href="/profile">Project List</a>
-                  <a class="navbar-brand" href="/about">About</a>
-                  <a class="navbar-brand" href="/contact">Contact</a>
-              </div>
-
-          </div>
-      </div>
-  </nav>
+<nav class="navbar navbar-expand-sm bg-light">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="navbar-brand" href="/">ProjectOnlineDiner</a>
+        </li>
+    </ul>
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="navbar-brand" href="/profile">Project List</a>
+        </li>
+    </ul>
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="navbar-brand" href="/about">About</a>
+        </li>
+    </ul>
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="navbar-brand" href="/contact">Contact</a>
+        </li>
+    </ul>
+</nav>

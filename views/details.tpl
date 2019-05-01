@@ -1,5 +1,8 @@
 %include header title='Project List'
-<h2>Project List</h2>
+<div class="card">
+    <div class="card-body">
+
+<h2 class="card-title">Project List</h2>
       <ul>
 	  	<li><a href="https://www.ryancheley.com">RyanCheley.com</a> - My personal blog </li>
 	  	<li><a href="https://www.interestingpeopledointerestingthings.com">Interesting People do Interesting Things</a>
@@ -12,4 +15,6 @@
 	  	<li><a href="https://www.fishcandrown.com">FishCanDrown.com</a> - A Podcast by some teenagers</li>
 
 	  </ul>
+	</div>
+</div>
 %include footer
