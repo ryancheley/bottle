@@ -1,4 +1,4 @@
-%include header title='Home'
+%include header title='ProjectOnlineDiner'
 <div class="card">
     <div class="card-body">
         <h2 class="card-title">Project Online Diner</h2>
