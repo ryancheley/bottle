@@ -13,11 +13,9 @@ def handle_root_url():
     redirect('/home')
 
 
-@route('/profile')
+@route('/projectlist')
 def make_request():
-    # make an API request here
-    profile_data = {'name': 'Ryan Cheley', 'role': 'Developer', 'email':'test at example dot com'}
-    return template('details', data=profile_data)
+    return template('details')
 
 
 @route('/about')
