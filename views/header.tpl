@@ -1,3 +1,9 @@
+<%
+    from bottle import request
+
+    page_name = request['bottle.route'].rule
+
+%>
 <!doctype html>
 <html lang="en">
   <head>
@@ -13,25 +19,36 @@
   </head>
   <body>
 
-<nav class="navbar navbar-expand-sm bg-light">
-    <ul class="navbar-nav">
-        <li class="nav-item">
-            <a class="navbar-brand" href="/">ProjectOnlineDiner</a>
-        </li>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">ProjectOnlineDiner</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        % if page_name == "/projectlist":
+      <li class="nav-item active">
+          % else:
+      <li class="nav-item">
+          % end
+        <a class="nav-link" href="/projectlist">Project List <span class="sr-only">(current)</span></a>
+      </li>
+        % if page_name == "/about":
+      <li class="nav-item active">
+          % else:
+      <li class="nav-item">
+          % end
+        <a class="nav-link" href="/about">About</a>
+      </li>
+        % if page_name == "/contact":
+      <li class="nav-item active">
+          % else:
+      <li class="nav-item">
+          % end
+        <a class="nav-link" href="/contact">Contact</a>
+      </li>
     </ul>
-    <ul class="navbar-nav">
-        <li class="nav-item">
-            <a class="navbar-brand" href="/profile">Project List</a>
-        </li>
-    </ul>
-    <ul class="navbar-nav">
-        <li class="nav-item">
-            <a class="navbar-brand" href="/about">About</a>
-        </li>
-    </ul>
-    <ul class="navbar-nav">
-        <li class="nav-item">
-            <a class="navbar-brand" href="/contact">Contact</a>
-        </li>
-    </ul>
+  </div>
 </nav>
