@@ -10,7 +10,7 @@
 	  	<li class="list-group-item"><a href="https://www.ifdit.com">IFDIT.com</a> - A spot for families to post the interstig things that they're doing</li>
 	  	<li class="list-group-item"><a href="https://www.chenello.com">Chenello.com</a> - A spot for the Chenello's to post the interesting things they do</li>
 	  	<li class="list-group-item"><a href="https://www.onethirdmajority.com">OneThirdMajority.com</a> - A voting app for groups of 3</li>
-	  	<li class="list-group-item"><a href="https://www.twofifthsmajority.com">ThreeFifthsMajority.com</a> - A voting app for groups of 5</li>
+	  	<li class="list-group-item"><a href="https://www.twofifthsmajority.com">TwoFifthsMajority.com</a> - A voting app for groups of 5</li>
 	  	<li class="list-group-item"><a href="https://www.Coachellaiscoming.com">CoachellaIsComing.com</a> - Surviving Coachella is hard ... let this app help</li>
 	  	<li class="list-group-item"><a href="https://www.fishcandrown.com">FishCanDrown.com</a> - A Podcast by some teenagers</li>
 
