@@ -1,6 +1,6 @@
 ﻿import os
 
-from bottle import route, template, redirect, static_file, error, run
+from bottle import route, template, redirect, static_file, error, run, request
 
 
 @route('/home')
@@ -23,9 +23,19 @@ def show_about():
     return template('about')
 
 
-@route('/contact')
-def show_about():
-    return template('contact')
+@route('/contact', method="GET")
+def show_contact():
+    return template('contact', message="Please enter your name")
+
+
+@route('/thankyou', method="POST")
+def show_thankyou():
+    first = request.forms.get('first')
+    last = request.forms.get('last')
+
+    message = "Thank you " + first + " " + last + " for your interest."
+
+    return template("thankyou", message=message)
 
 
 @route('/css/<filename>')

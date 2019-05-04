@@ -1,11 +1,21 @@
-%include header title='Home'
+%include header title='Contact'
 <div class="card">
     <div class="card-body">
 
     <h2 class="card-title">Contact Me</h2>
-      <p class="card-text">
-      A simple contact form will go here
-      </p>
+    <form method="post" action="/thankyou">
+        <fieldset>
+            <legend>SAMPLE FORM</legend>
+            <ul>
+                <li>First Name: <input name='first'>
+                </li>
+                <li>Last Name: <input name='last'>
+                </li>
+            </ul><input type='submit' value='Submit Form'>
+        </fieldset>
+    </form>
+
+    <p>{{message}}</p>
     </div>
 </div>
 
