@@ -1,5 +1,5 @@
 ﻿import os
-
+import sqlite3
 from bottle import route, template, redirect, static_file, error, run, request
 
 
@@ -15,7 +15,14 @@ def handle_root_url():
 
 @route('/projectlist')
 def make_request():
-    return template('details')
+    conn = sqlite3.connect('pod.db')
+    c = conn.cursor()
+
+    c.execute("SELECT url, description, site_name from sites")
+    result = c.fetchall()
+    c.close()
+    output = template('details', rows=result)
+    return output
 
 
 @route('/about')
@@ -25,6 +32,7 @@ def show_about():
 
 @route('/contact', method="GET")
 def show_contact():
+
     return template('contact', message="Please enter your name")
 
 
@@ -32,8 +40,17 @@ def show_contact():
 def show_thankyou():
     first = request.forms.get('first')
     last = request.forms.get('last')
+    email = request.forms.get('email')
 
     message = "Thank you " + first + " " + last + " for your interest."
+
+    conn = sqlite3.connect('pod.db')
+    c = conn.cursor()
+
+    c.execute("INSERT INTO contact (first_name,last_name, email) VALUES (?,?,?)", (first, last, email))
+
+    conn.commit()
+    c.close()
 
     return template("thankyou", message=message)
 

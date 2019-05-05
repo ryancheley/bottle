@@ -11,6 +11,9 @@
                 </li>
                 <li>Last Name: <input name='last'>
                 </li>
+                <li>
+                    Email Address: <input name="email">
+                </li>
             </ul><input type='submit' value='Submit Form'>
         </fieldset>
     </form>
