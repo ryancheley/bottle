@@ -4,3 +4,6 @@ venv
 #.idea files
 .idea
 .DS_Store
+
+# database creation scripts
+database_create.py
