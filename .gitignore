@@ -7,3 +7,6 @@ venv
 
 # database creation scripts
 database_create.py
+
+# database files
+pod.db
