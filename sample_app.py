@@ -33,7 +33,7 @@ def show_about():
 @route('/contact', method="GET")
 def show_contact():
 
-    return template('contact', message="Please enter your name")
+    return template('contact', message="Please enter your contact information")
 
 
 @route('/thankyou', method="POST")
